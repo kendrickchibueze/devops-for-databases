@@ -11,7 +11,7 @@ steps:
       provider: 'azurerm'
       command: 'init'
       workingDirectory: 'SQL-Server-Creation'
-      backendServiceArm: 'Azure subscription 1'
+      backendServiceArm: 'azure spn'
       backendAzureRmResourceGroupName: 'terraform-rg'
       backendAzureRmStorageAccountName: 'kendrickstorage'
 
