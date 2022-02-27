@@ -15,7 +15,6 @@ steps:
       backendAzureRmResourceGroupName: 'terraform-rg'
       backendAzureRmStorageAccountName: 'kendrickstorage'
 
-
 - task: TerraformTaskV2@2
   inputs:
     provider: 'azurerm'
