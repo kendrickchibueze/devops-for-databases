@@ -7,4 +7,4 @@ create table users (
     LastName varchar(255)
 );
 
-insert into users (id, FirstName, LastName) values (1, 'Mike', 'Levan')
+insert into users (id, FirstName, LastName) values (1, 'kendrick', 'chukwuka')
