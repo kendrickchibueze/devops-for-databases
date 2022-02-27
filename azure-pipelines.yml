@@ -1,7 +1,7 @@
 
 
 trigger:
-- master
+-master
 
 pool:
   vmImage: ubuntu-latest
@@ -12,7 +12,7 @@ steps:
       provider: 'azurerm'
       command: 'init'
       workingDirectory: 'SQL-Server-Creation'
-      backendServiceArm: 'azure spn'
+      backendServiceArm: 'Azure subscription 1'
       backendAzureRmResourceGroupName: 'terraform-rg'
       backendAzureRmStorageAccountName: 'kendrickstorage'
 
