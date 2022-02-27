@@ -1,8 +1,8 @@
 
 trigger:
--master
+ - master
 
- pool:
+pool:
 -vmImage: ubuntu-latest
 
 steps:
@@ -25,10 +25,10 @@ steps:
       backendAzureRmKey: 'terraform.tfstate'
 
   - task: TerraformTaskV2@2
-  inputs:
+    inputs:
     provider: 'azurerm'
     command: 'apply'
     workingDirectory: 'SQL-Server-Creation'
     commandOptions: '-var ="password=$(SQL-PASSWORD)" -var="ip_address=$(IP_ADDRESS)"'
-      backendAzureRmContainerName: 'kendrickcontainer'
-      backendAzureRmKey: 'terraform.tfstate'
+    backendAzureRmContainerName: 'kendrickcontainer'
+    backendAzureRmKey: 'terraform.tfstate'
